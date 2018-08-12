@@ -1,14 +1,15 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            Home Page
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <h3>My first ionic App</h3>
+    <button ion-button full (click)="clickToNavigate()">Go To First Page</button><br/>
+    <button ion-button full (click)="getCurrentLocation()">Get current location</button>
+    <h3>Watched Location => {{watchedLocation.latitude}} {{watchedLocation.longitude}}</h3>
+    <h3>Current Location => {{currentLocation.latitude}} {{currentLocation.longitude}}</h3>
 </ion-content>
